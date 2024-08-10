@@ -312,5 +312,36 @@ Math.random()
 
 //////////////////////////////////////////////
 
-///////////////////////////////////////////////
+// ///////////////////////////////////////////////
+// let randomNumber = Math.random() * 6 + 1;
+// const diceRoll = Math.floor(randomNumber)
 
+// document.write(diceRoll)
+
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////
+/* Qs2. Create an object representing a car that stores the following properties for the
+// car: name, model, color.
+// Print the car’s name. */
+// const car = {
+//     name:"Khownikshegue",
+//     model:"SLR2",
+//     color:"Green"
+// }
+
+// document.write(car.name)
+/* Qs3. Create an object Person with their name, age and city.
+Edit their city’s original value to change it to “New York”.
+Add a new property country and set it to the United States. */
+
+const person = {
+    name : "Seghal",
+    age: 25,
+    city : "Amsterdam"
+}
+
+person.city = "New York"
+person["country"] = "United States"
+
+console.log(person)
