@@ -335,13 +335,29 @@ Math.random()
 Edit their city’s original value to change it to “New York”.
 Add a new property country and set it to the United States. */
 
-const person = {
-    name : "Seghal",
-    age: 25,
-    city : "Amsterdam"
-}
+// const person = {
+//     name : "Seghal",
+//     age: 25,
+//     city : "Amsterdam"
+// }
 
-person.city = "New York"
-person["country"] = "United States"
+// person.city = "New York"
+// person["country"] = "United States"
 
-console.log(person)
+// console.log(person)
+
+///////////////////////////////////////////
+
+///////////////////////////////////////////
+
+// // Lexical Scope : A variable defined outside a function can be be accessible inside another function defined after the variable declaration
+// // The opposite is NOT true
+
+// function outerScope() {
+//     let x = 1;
+//     let y = 2;
+//     function innerScope() {
+//         console.log(x,y)
+//     }
+//     innerScope()
+// }
