@@ -462,9 +462,51 @@ via try and catch our website doesnt crash as it executes error as a message str
 // }, 3000);
 // console.log("Welocome to ");
 
-/* SetInterval works again and again with  after given duration */
-console.log("Hi");
-setInterval(() => {
-  console.log("verma classes");
-}, 3000);
-console.log("Welocome to ");
+/* SetInterval works again and again with  after given duration 
+if we want to stop execution then we have to use clearInterval which
+gives when we make variable of setInterval and call that variable 
+in clearinterval(var)then ot stop sexecuting
+*/
+// console.log("Hi");
+// setInterval(() => {
+//   console.log("verma classes");
+// }, 1000);
+// console.log("Welocome to ");
+
+/* */
+// const arrayAverage = (arr) => {
+//   let total = 0;
+//   for (let number of arr) {
+//     total = total + number;
+//   }
+//   return total / arr.length;
+// };
+// let arr = [2, 4, 2, 6, 3, 5, 5, 5, 6, 3, 4, 3, 5, 3];
+
+// console.log(arrayAverage(arr));
+
+//
+const isEven = (num) => num % 2 === 0;
+
+console.log(isEven(4));
+
+// for each
+let arr = [
+  {
+    name: "Sahil",
+    marks: 87,
+  },
+  {
+    name: "babli",
+    marks: 98,
+  },
+  {
+    name: "DevManus",
+    marks: 97,
+  },
+];
+
+arr.forEach((students) => {
+  console.log(students);
+  console.log(students.name, students.marks);
+});
