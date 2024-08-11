@@ -486,27 +486,38 @@ in clearinterval(var)then ot stop sexecuting
 // console.log(arrayAverage(arr));
 
 //
-const isEven = (num) => num % 2 === 0;
+// const isEven = (num) => num % 2 === 0;
 
-console.log(isEven(4));
+// console.log(isEven(4));
 
-// for each
-let arr = [
-  {
-    name: "Sahil",
-    marks: 87,
-  },
-  {
-    name: "babli",
-    marks: 98,
-  },
-  {
-    name: "DevManus",
-    marks: 97,
-  },
-];
+// // // for each
+// let arr = [
+//   {
+//     name: "Sahil",
+//     marks: 87,
+//   },
+//   {
+//     name: "babli",
+//     marks: 98,
+//   },
+//   {
+//     name: "DevManus",
+//     marks: 94.5,
+//   },
+// ];
 
-arr.forEach((students) => {
-  console.log(students);
-  console.log(students.name, students.marks);
-});
+// let gpa = arr.map((el) => {
+//   return el.marks / 10;
+// });
+
+// console.log(gpa);
+// arr.forEach((students) => {
+//   console.log(students);
+//   console.log(students.name, students.marks);
+// });
+
+let num = [2, 5, 3, 4, 7, 3, 65, 3, 5, 5, 3, 5, 4, 3, 45];
+let even = num.filter((n) => n % 2 == 0);
+let odd = num.filter((o) => !(o % 2 == 0));
+console.log(`Even numbers = ${even}`);
+console.log(`Odd numbers = ${odd}`);
