@@ -395,21 +395,37 @@ Add a new property country and set it to the United States. */
 // };
 // multipleGreet(greet,5)
 
-/* higher order function which return a function */
-function oddOrEven(req) {
-  if (req == "odd") {
-    return function (n) {
-      console.log(!(n % 2 == 0));
-    };
-  } else if (req == "even") {
-    return function (n) {
-      console.log(n % 2 == 0);
-    };
-  } else {
-    console.log("Wrong request");
-  }
-}
+// /* higher order function which return a function */
+// function oddOrEven(req) {
+//   if (req == "odd") {
+//     return function (n) {
+//       console.log(!(n % 2 == 0));
+//     };
+//   } else if (req == "even") {
+//     return function (n) {
+//       console.log(n % 2 == 0);
+//     };
+//   } else {
+//     console.log("Wrong request");
+//   }
+// }
 
-let req = "even";
+// let req = "even";
 
-oddOrEven(req)(4);
+// oddOrEven(req)(4);
+
+//////////////////////////////////////////
+// this keyword refers to an object that is executing the current piece of code
+// const student = {
+//   name: "Sahil",
+//   age: 22,
+//   eng: 89,
+//   math: 93,
+//   phy: 88,
+//   getAvg() {
+//     console.log(this)
+//     let avg = (this.eng + this.math + this.phy) / 3;
+//     console.log(`${this.name} has average marks ${avg}`);
+//   },
+// };
+// student.getAvg();
