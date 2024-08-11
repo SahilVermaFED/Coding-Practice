@@ -361,3 +361,36 @@ Add a new property country and set it to the United States. */
 //     }
 //     innerScope()
 // }
+
+///////////////////////////////////////////
+
+///////////////////////////////////////////
+// Adding Element
+// document.createElement("h1")
+// let newP = document.createElement("p")
+// newP.innerText = "Hi i am a disco dancer"
+// let btn = document.createElement("button")
+// btn.innerText = "Click Me"
+// let body = document.querySelector("body")
+// body.appendChild(newP)
+// body.appendChild(btn)
+
+// newP.append(" || Now i have added with append ||") // append added to the lasr
+// newP.prepend("|| Hey i am because of prepend || ") // prepend added to the first
+
+// // insertAdjacentElement(position, element)
+
+// position includes "beforebegin", "afterbegin", "beforeend", "afternend"
+
+// // higher order function 
+// /*A function that takes one or multiple function as an arguments and also can return a function */
+// function multipleGreet(func, count) {
+// for(let i = 1;i<= count;i++) {
+// func()
+// }
+// }
+
+// let greet = function () {
+//   console.log("Hello!!");
+// };
+// multipleGreet(greet,5)
