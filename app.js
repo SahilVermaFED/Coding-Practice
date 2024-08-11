@@ -429,3 +429,15 @@ Add a new property country and set it to the United States. */
 //   },
 // };
 // student.getAvg();
+
+/* Try & catch thesestatemnets is used for find errorwhile execution and show us whats the result 
+via try and catch our website doesnt crash as it executes error as a message string or what we want to execute after*/
+
+/* Arrow fucntion
+ */
+
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(1, 5));
