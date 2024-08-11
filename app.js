@@ -436,8 +436,35 @@ via try and catch our website doesnt crash as it executes error as a message str
 /* Arrow fucntion
  */
 
-const add = (a, b) => {
-  return a + b;
-};
+// const add = (a, b) => {
+//   return a + b;
+// };
 
-console.log(add(1, 5));
+// console.log(add(1, 5));
+
+// const cube = (n) => {
+//   return n * n * n;
+// };
+// console.log(cube(5));
+
+// Implicit return if some funcyion is called and single
+// value is returned then we use implicit return wherre we use simple () parenthesis
+// and without return
+// const mul = (a, b) => a * b;
+
+// console.log(mul(2, 3));
+
+// set time out function doesnt affect the other
+// fucntion working it works according to given time and setTimeout works only one single time
+// console.log("Hi");
+// setTimeout(() => {
+//   console.log("verma classes");
+// }, 3000);
+// console.log("Welocome to ");
+
+/* SetInterval works again and again with  after given duration */
+console.log("Hi");
+setInterval(() => {
+  console.log("verma classes");
+}, 3000);
+console.log("Welocome to ");
