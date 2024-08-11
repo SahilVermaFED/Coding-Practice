@@ -382,8 +382,8 @@ Add a new property country and set it to the United States. */
 
 // position includes "beforebegin", "afterbegin", "beforeend", "afternend"
 
-// // higher order function 
-// /*A function that takes one or multiple function as an arguments and also can return a function */
+// // higher order function
+// /*A function that takes one or multiple function as an arguments */
 // function multipleGreet(func, count) {
 // for(let i = 1;i<= count;i++) {
 // func()
@@ -394,3 +394,22 @@ Add a new property country and set it to the United States. */
 //   console.log("Hello!!");
 // };
 // multipleGreet(greet,5)
+
+/* higher order function which return a function */
+function oddOrEven(req) {
+  if (req == "odd") {
+    return function (n) {
+      console.log(!(n % 2 == 0));
+    };
+  } else if (req == "even") {
+    return function (n) {
+      console.log(n % 2 == 0);
+    };
+  } else {
+    console.log("Wrong request");
+  }
+}
+
+let req = "even";
+
+oddOrEven(req)(4);
