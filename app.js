@@ -626,4 +626,21 @@ in clearinterval(var)then ot stop sexecuting
 //   return args.reduce((sum, el) => sum + el);
 // }
 
-// console.log(sum(1, 2, 3, 4, 5));
+///////////////////////////////////////?
+// // Destructuring in Array
+// let names = ["Pushplata", "Dharmender", "Devesh", "Sahil"];
+// let [mumma, papa, ...children] = names;
+// console.log(mumma);
+// console.log(papa);
+// console.log(children);
+
+// Destructuring in object;
+let family = {
+  mukhiya: "Dharmender",
+  laxmi: "Pushplata",
+  BhrataShree: "Ishu",
+  chotu: "Sahil",
+};
+let { mukhiya: papa, laxmi: mummy } = family;
+console.log(papa);
+console.log(mummy);
