@@ -547,10 +547,53 @@ in clearinterval(var)then ot stop sexecuting
 ///////////////////////////////////////////
 
 ///////////////////////////////////////////
-// Default parameter
+// // Default parameter
 
-const sum = (a, b = 2) => a + b;
-const result1 = sum(4, 6);
-const result2 = sum(4); // here default parameter for b is 2 and a = 4
-console.log(result1);
-console.log(result2);
+// const sum = (a, b = 2) => a + b;
+// const result1 = sum(4, 6);
+// const result2 = sum(4); // here default parameter for b is 2 and a = 4
+// console.log(result1);
+// console.log(result2);
+
+// spread operator
+
+// console.log(Math.min(1, 2, 3, 4, 5, 6, 7, 8, 9));
+// let arr = [0, 9, 8, 6, 3, 2, 4];
+// console.log(Math.max(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[5]));
+// // now using spread operator for short code and best result
+// const result = Math.max(...arr);
+// console.log(result);
+
+// Array literals
+// let chars = [..."Hero"];
+// console.log(chars);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 7, 8];
+// let newArr = [...arr];
+// console.log(newArr);
+// newArr.push(4);
+// console.log(newArr);
+
+//
+// let odd = [1, 3, 5, 7, 9];
+// let even = [2, 4, 6, 8, 10];
+// let nums = [...odd, ...even];
+// console.log(nums);
+
+//////////////////////////////////
+
+//////////////////////////////////
+// Object Literals
+let data = {
+  name: "Sahil Verma",
+  email: "sahilvpro@gmail.com",
+  passcode: "DON",
+};
+const dataCopy = { ...data, id: 123, gender: "Male" };
+console.log(dataCopy);
+
+// array to object
+let arr = [4, 1, 7, 2, 9, 2, 5, 7, 3];
+let obj = { ...arr }; // it alwasy sworks a s key value pair
+
+console.log(obj);
