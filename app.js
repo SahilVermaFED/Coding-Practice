@@ -550,5 +550,7 @@ in clearinterval(var)then ot stop sexecuting
 // Default parameter
 
 const sum = (a, b = 2) => a + b;
-const result = sum(4);
-console.log(result);
+const result1 = sum(4, 6);
+const result2 = sum(4); // here default parameter for b is 2 and a = 4
+console.log(result1);
+console.log(result2);
