@@ -634,13 +634,55 @@ in clearinterval(var)then ot stop sexecuting
 // console.log(papa);
 // console.log(children);
 
-// Destructuring in object;
-let family = {
-  mukhiya: "Dharmender",
-  laxmi: "Pushplata",
-  BhrataShree: "Ishu",
-  chotu: "Sahil",
-};
-let { mukhiya: papa, laxmi: mummy } = family;
-console.log(papa);
-console.log(mummy);
+// // Destructuring in object;
+// let family = {
+//   mukhiya: "Dharmender",
+//   laxmi: "Pushplata",
+//   BhrataShree: "Ishu",
+//   chotu: "Sahil",
+// };
+// let { mukhiya: papa, laxmi: mummy } = family;
+// console.log(papa);
+// console.log(mummy);
+
+/////////////////////////////
+// /* . Square and sum the array elements using the arrow function and then find the
+// average of the array. */
+// let arr = [1, 2, 3, 4, 5];
+// let square = arr.map((num) => num * num);
+// console.log(square);
+// let sum = square.reduce((sum, el) => sum + el, 0);
+// console.log(sum);
+// let avg = sum / arr.length;
+
+// console.log(avg);
+
+///////////////////////////////////
+
+//////////////////////////////////
+// // Qs2. Create a new array using the map function whose each element is equal to the
+// // original element plus 5.
+
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = arr.map((el) => el + 5);
+// console.log(newArr);
+
+//////////////////////////////////////
+
+//////////////////////////////////////
+// /* Qs3. Create a new array whose elements are in uppercase of words present in the
+// original array. */
+// let originalStr = ["sahil", "dharam", "pushpa", "devManus"];
+// let newStr = originalStr.map((str) => str.toUpperCase());
+// console.log(newStr);
+
+/* Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
+variable number of arguments. The function should return a new array with the original
+array values and all of the additional arguments doubled. */
+
+const doubleAndReturnArgs = (arr, ...args) => [
+  ...arr,
+  ...args.map((el) => el * 2),
+];
+console.log(doubleAndReturnArgs([1, 2, 3, 4], 3, 4));
+console.log(doubleAndReturnArgs([4, 5, 2], 5, 5, 4));
