@@ -548,3 +548,7 @@ in clearinterval(var)then ot stop sexecuting
 
 ///////////////////////////////////////////
 // Default parameter
+
+const sum = (a, b = 2) => a + b;
+const result = sum(4);
+console.log(result);
