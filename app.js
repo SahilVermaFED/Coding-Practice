@@ -597,3 +597,33 @@ in clearinterval(var)then ot stop sexecuting
 // let obj = { ...arr }; // it alwasy sworks a s key value pair
 
 // console.log(obj);
+
+/////////////////////////////////
+
+//////////////////////////////////
+
+// rest operators
+// const sum = (...args) => {
+//   for (let i = 0; i < args.length; i++) {
+//     console.log("You gave us " + args[i]);
+//   }
+// };
+
+// console.log(sum(0, 3));
+
+// const min = () => {
+//   console.log(arguments.length);
+// };
+
+// function min2() {
+//   console.log(arguments.length);
+// }
+
+// console.log(min(8, 7, 9, 0));
+// console.log(min2(9, 8, 7, 6));
+
+// function sum(...args) {
+//   return args.reduce((sum, el) => sum + el);
+// }
+
+// console.log(sum(1, 2, 3, 4, 5));
