@@ -583,17 +583,17 @@ in clearinterval(var)then ot stop sexecuting
 //////////////////////////////////
 
 //////////////////////////////////
-// Object Literals
-let data = {
-  name: "Sahil Verma",
-  email: "sahilvpro@gmail.com",
-  passcode: "DON",
-};
-const dataCopy = { ...data, id: 123, gender: "Male" };
-console.log(dataCopy);
+// // Object Literals
+// let data = {
+//   name: "Sahil Verma",
+//   email: "sahilvpro@gmail.com",
+//   passcode: "DON",
+// };
+// const dataCopy = { ...data, id: 123, gender: "Male" };
+// console.log(dataCopy);
 
-// array to object
-let arr = [4, 1, 7, 2, 9, 2, 5, 7, 3];
-let obj = { ...arr }; // it alwasy sworks a s key value pair
+// // array to object
+// let arr = [4, 1, 7, 2, 9, 2, 5, 7, 3];
+// let obj = { ...arr }; // it alwasy sworks a s key value pair
 
-console.log(obj);
+// console.log(obj);
