@@ -516,8 +516,35 @@ in clearinterval(var)then ot stop sexecuting
 //   console.log(students.name, students.marks);
 // });
 
-let num = [2, 5, 3, 4, 7, 3, 65, 3, 5, 5, 3, 5, 4, 3, 45];
-let even = num.filter((n) => n % 2 == 0);
-let odd = num.filter((o) => !(o % 2 == 0));
-console.log(`Even numbers = ${even}`);
-console.log(`Odd numbers = ${odd}`);
+// let num = [2, 5, 3, 4, 7, 3, 65, 3, 5, 5, 3, 5, 4, 3, 45];
+// let even = num.filter((n) => n % 2 == 0);
+// let odd = num.filter((o) => !(o % 2 == 0));
+// console.log(`Even numbers = ${even}`);
+// console.log(`Odd numbers = ${odd}`);
+//////////////////////////////////////////////
+// let arr = [2, 4, 5, 3, 5, 3, 2, 2];
+
+// let max = -1;
+
+// for (let i = 0; i <= arr.length; i++) {
+//   if (max < arr[i]) {
+//     max = arr[i];
+//   }
+// }
+// console.log(max);
+// ///////////////////////////////////////////////
+// // reduce
+// let arr2 = [2, 3, 5, 5, 6, 4, 4, 65, 6, 5, 24, 45, 5, 56];
+// let max = arr2.reduce((max, el) => {
+//   if (max < el) {
+//     return el;
+//   } else {
+//     return max;
+//   }
+// });
+// console.log(max);
+
+///////////////////////////////////////////
+
+///////////////////////////////////////////
+// Default parameter
