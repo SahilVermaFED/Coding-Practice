@@ -749,35 +749,95 @@ object which contains all the keys and values
 //   });
 // });
 
-// Example of callbakc hell
-function saveToDatabase(data, success, failure) {
-  let speedOfInternet = Math.floor(Math.random() * 10 + 1);
-  speedOfInternet > 4 ? success() : failure();
+// // Example of callbakc hell
+// function saveToDatabase(data, success, failure) {
+//   let speedOfInternet = Math.floor(Math.random() * 10 + 1);
+//   speedOfInternet > 4 ? success() : failure();
+// }
+// saveToDatabase(
+//   "Data_1",
+//   () => {
+//     console.log("Successfully saved data");
+//     saveToDatabase(
+//       "Data_2",
+//       () => {
+//         console.log("Successfully saved data 2");
+//         saveToDatabase(
+//           "Data_3",
+//           () => {
+//             console.log("Successfully saved data 3");
+//           },
+//           () => {
+//             console.log("Failure : Doesn't get data 3 (Weak connection)");
+//           }
+//         );
+//       },
+//       () => {
+//         console.log("Failure : Doesn't get data 2 (Weak connection)");
+//       }
+//     );
+//   },
+//   () => {
+//     console.log("Failure : Doesn't get data (Weak connection)");
+//   }
+// );
+
+// Example of promise
+// function saveToDb(data) {
+//   return new Promise((resolve, reject) => {
+//     let internetSpeed = Math.floor(Math.random() * 10) + 1;
+//     if (internetSpeed > 4) {
+//       resolve("Data is saved");
+//     } else {
+//       reject("Weak connection");
+//     }
+//   });
+// }
+
+// saveToDb("Hello My dear bhaiya ji")
+//   .then((result) => {
+//     console.log("Data 1 saved");
+//     console.log("Result of promise : ", result);
+//     return saveToDb("Hello to 2nd Data");
+//   })
+//   .then((result) => {
+//     console.log("Data 2 saved");
+//     console.log("Result of promise : ", result);
+//     return saveToDb("Data 3 for database");
+//   })
+//   .then((result) => {
+//     console.log("Data 3 saved");
+//     console.log("Result of promise : ", result);
+//   })
+//   .catch((error) => {
+//     console.log("promise rejected");
+//     console.log("error : ", error);
+//   });
+
+// Promise color change for heading asyncronously with promise
+h1 = document.querySelector("h1");
+
+function colorChange(color, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      h1.style.color = color;
+      resolve("Color changed !!");
+    }, delay);
+  });
 }
-saveToDatabase(
-  "Data_1",
-  () => {
-    console.log("Successfully saved data");
-    saveToDatabase(
-      "Data_2",
-      () => {
-        console.log("Successfully saved data 2");
-        saveToDatabase(
-          "Data_2",
-          () => {
-            console.log("Successfully saved data 3");
-          },
-          () => {
-            console.log("Failure : Doesn't get data 3 (Weak connection)");
-          }
-        );
-      },
-      () => {
-        console.log("Failure : Doesn't get data 2 (Weak connection)");
-      }
-    );
-  },
-  () => {
-    console.log("Failure : Doesn't get data (Weak connection)");
-  }
-);
+
+colorChange("red", 1000)
+  .then(() => {
+    console.log("Red color was completed");
+    return colorChange("blue", 1000);
+  })
+  .then(() => {
+    console.log("Blue color was completed");
+    return colorChange("pink", 1000);
+  })
+  .then(() => {
+    console.log("Pink color was completed");
+  })
+  .catch((error) => {
+    console.log("Error : ", error);
+  });
