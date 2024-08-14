@@ -703,7 +703,7 @@ object which contains all the keys and values
 // const resultObject = mergeObjects(obj1, obj2);
 // console.log(resultObject);
 
-// // Call stack
+// // // Call stack
 // function one() {
 //   return 1;
 // }
@@ -716,3 +716,35 @@ object which contains all the keys and values
 //   console.log(res);
 // }
 // three();
+
+// // callback hell
+// h1 = document.querySelector("h1");
+
+// setTimeout(() => {
+//   h1.style.color = "red";
+// }, 1000);
+
+// setTimeout(() => {
+//   h1.style.color = "orange";
+// }, 2000);
+
+// setTimeout(() => {
+//   h1.style.color = "blue";
+// }, 3000);
+
+// CALLBACK HELL
+h1 = document.querySelector("h1");
+function colorChange(color, timeTaken, nextChangeColor) {
+  setTimeout(() => {
+    h1.style.color = color;
+    if (nextChangeColor) nextChangeColor();
+  }, timeTaken);
+}
+
+colorChange("red", 1000, () => {
+  colorChange("yellow", 1000, () => {
+    colorChange("green", 1000, () => {
+      colorChange("blue", 1000);
+    });
+  });
+});
