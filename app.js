@@ -815,29 +815,29 @@ object which contains all the keys and values
 //   });
 
 // Promise color change for heading asyncronously with promise
-h1 = document.querySelector("h1");
+// h1 = document.querySelector("h1");
 
-function colorChange(color, delay) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      h1.style.color = color;
-      resolve("Color changed !!");
-    }, delay);
-  });
-}
+// function colorChange(color, delay) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       h1.style.color = color;
+//       resolve("Color changed !!");
+//     }, delay);
+//   });
+// }
 
-colorChange("red", 1000)
-  .then(() => {
-    console.log("Red color was completed");
-    return colorChange("blue", 1000);
-  })
-  .then(() => {
-    console.log("Blue color was completed");
-    return colorChange("pink", 1000);
-  })
-  .then(() => {
-    console.log("Pink color was completed");
-  })
-  .catch((error) => {
-    console.log("Error : ", error);
-  });
+// colorChange("red", 1000)
+//   .then(() => {
+//     console.log("Red color was completed");
+//     return colorChange("blue", 1000);
+//   })
+//   .then(() => {
+//     console.log("Blue color was completed");
+//     return colorChange("pink", 1000);
+//   })
+//   .then(() => {
+//     console.log("Pink color was completed");
+//   })
+//   .catch((error) => {
+//     console.log("Error : ", error);
+//   });
