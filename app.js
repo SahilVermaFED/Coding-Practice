@@ -676,13 +676,33 @@ in clearinterval(var)then ot stop sexecuting
 // let newStr = originalStr.map((str) => str.toUpperCase());
 // console.log(newStr);
 
-/* Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
-variable number of arguments. The function should return a new array with the original
-array values and all of the additional arguments doubled. */
+// /* Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
+// variable number of arguments. The function should return a new array with the original
+// array values and all of the additional arguments doubled. */
 
-const doubleAndReturnArgs = (arr, ...args) => [
-  ...arr,
-  ...args.map((el) => el * 2),
-];
-console.log(doubleAndReturnArgs([1, 2, 3, 4], 3, 4));
-console.log(doubleAndReturnArgs([4, 5, 2], 5, 5, 4));
+// const doubleAndReturnArgs = (arr, ...args) => [
+//   ...arr,
+//   ...args.map((el) => el * 2),
+// ];
+// console.log(doubleAndReturnArgs([1, 2, 3, 4], 3, 4));
+// console.log(doubleAndReturnArgs([4, 5, 2], 5, 5, 4));
+
+///////////////////////////////////////
+
+//////////////////////////////////////
+/* Qs5. Write a function called mergeObjects 
+that accepts two objects and returns a new 
+object which contains all the keys and values
+ of the first object and second object. */
+// const mergeObjects = (obj1, obj2) => ({
+//   ...obj1,
+//   ...obj2,
+// });
+// let obj1 = { a: 1, b: 2 };
+// let obj2 = { c: 3, d: 4 };
+// const resultObject = mergeObjects(obj1, obj2);
+// console.log(resultObject);
+
+function hello() {
+  console.log(hello);
+}
