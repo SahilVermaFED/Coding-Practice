@@ -703,15 +703,16 @@ object which contains all the keys and values
 // const resultObject = mergeObjects(obj1, obj2);
 // console.log(resultObject);
 
-function one() {
-  return 1;
-}
-function two() {
-  return one() + one();
-}
+// // Call stack
+// function one() {
+//   return 1;
+// }
+// function two() {
+//   return one() + one();
+// }
 
-function three() {
-  let res = two() + one();
-  console.log(res);
-}
-three();
+// function three() {
+//   let res = two() + one();
+//   console.log(res);
+// }
+// three();
