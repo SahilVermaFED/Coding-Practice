@@ -733,18 +733,51 @@ object which contains all the keys and values
 // }, 3000);
 
 // CALLBACK HELL
-h1 = document.querySelector("h1");
-function colorChange(color, timeTaken, nextChangeColor) {
-  setTimeout(() => {
-    h1.style.color = color;
-    if (nextChangeColor) nextChangeColor();
-  }, timeTaken);
-}
+// h1 = document.querySelector("h1");
+// function colorChange(color, timeTaken, nextChangeColor) {
+//   setTimeout(() => {
+//     h1.style.color = color;
+//     if (nextChangeColor) nextChangeColor();
+//   }, timeTaken);
+// }
 
-colorChange("red", 1000, () => {
-  colorChange("yellow", 1000, () => {
-    colorChange("green", 1000, () => {
-      colorChange("blue", 1000);
-    });
-  });
-});
+// colorChange("red", 1000, () => {
+//   colorChange("yellow", 1000, () => {
+//     colorChange("green", 1000, () => {
+//       colorChange("blue", 1000);
+//     });
+//   });
+// });
+
+// Example of callbakc hell
+function saveToDatabase(data, success, failure) {
+  let speedOfInternet = Math.floor(Math.random() * 10 + 1);
+  speedOfInternet > 4 ? success() : failure();
+}
+saveToDatabase(
+  "Data_1",
+  () => {
+    console.log("Successfully saved data");
+    saveToDatabase(
+      "Data_2",
+      () => {
+        console.log("Successfully saved data 2");
+        saveToDatabase(
+          "Data_2",
+          () => {
+            console.log("Successfully saved data 3");
+          },
+          () => {
+            console.log("Failure : Doesn't get data 3 (Weak connection)");
+          }
+        );
+      },
+      () => {
+        console.log("Failure : Doesn't get data 2 (Weak connection)");
+      }
+    );
+  },
+  () => {
+    console.log("Failure : Doesn't get data (Weak connection)");
+  }
+);
