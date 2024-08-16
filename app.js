@@ -841,3 +841,43 @@ object which contains all the keys and values
 //   .catch((error) => {
 //     console.log("Error : ", error);
 //   });
+
+/*Async function */
+// async function greet() {
+//   throw "Some random error";
+//   return "Hello!";
+// }
+
+// greet()
+//   .then((result) => {
+//     console.log("Promise was resolved");
+//     console.log("result : ", result);
+//   })
+//   .catch((error) => {
+//     console.log("Promise was reject with error : ", error);
+//   });
+
+// // async await for color code
+// h1 = document.querySelector("h1");
+
+// function colorChange(color, delay) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       h1.style.color = color;
+//       console.log(`color changed to ${color}!`);
+//       resolve("Color changed !!");
+//     }, delay);
+//   });
+// }
+
+// async function demo() {
+//   try {
+//     await colorChange("red", 1000);
+//     await colorChange("blue", 1000);
+//     await colorChange("pink", 1000);
+//     colorChange("green", 1000);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// demo();
