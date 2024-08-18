@@ -906,3 +906,35 @@ object which contains all the keys and values
 //    coverted or covered witrh single quotes and all
 //    the key and value will become string */
 // console.log(ObjToJSON); // '{"name":"Sahil","age":22,"marks":73}'
+
+// Query string provides additional information to normal url with ? sign
+
+// //
+// let url = "https://catfact.ninja/fact";
+
+// fetch(url)
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// Proper fetching using async await
+let url = "https://catfact.ninja/fact";
+
+async function getFacts() {
+  try {
+    let res = await fetch(url);
+    let data = await res.json();
+    console.log(data.fact);
+
+    let res2 = await fetch(url);
+    let data2 = await res2.json();
+    console.log(data2.fact);
+  } catch (err) {
+    console.log(err, "-----------error");
+  }
+  console.log("Meri marzi m to print hounga");
+}
+getFacts();
