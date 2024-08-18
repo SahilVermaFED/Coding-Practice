@@ -881,3 +881,28 @@ object which contains all the keys and values
 //   }
 // }
 // demo();
+
+// // Accessing JSON Data JSON.parse means converting one data format to another data format (jsonData to js object)
+// let jsonRes =
+//   '{"fact":"Accesing Data - i am the data you have accessed!!", "length": 78}';
+// let validRes = JSON.parse(jsonRes); // Converts JSON data => Js object
+// console.log(validRes); /* {
+//     fact: 'Accesing Data - i am the data you have accessed!!',
+//     length: 78
+//   } */
+
+// ///////////////////////////////////////////////////
+
+// // changing js object to json Data with JSON.stringify
+// let student = {
+//   name: "Sahil",
+//   age: 22,
+//   marks: 73,
+// };
+
+// let ObjToJSON =
+//   JSON.stringify(student); /* Here conversion of Object to JSONdata and
+//    Json Data is simply a string that all data is
+//    coverted or covered witrh single quotes and all
+//    the key and value will become string */
+// console.log(ObjToJSON); // '{"name":"Sahil","age":22,"marks":73}'
