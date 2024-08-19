@@ -938,3 +938,19 @@ object which contains all the keys and values
 //   console.log("Meri marzi m to print hounga");
 // }
 // getFacts();
+
+// OOPs Object oriented programming
+/* Object Prototypes
+    => Prototypes are the mechanism by which
+      Javascript objects inherit features from one another
+    => It is like single template object that
+      all object inherit methods and properties from without thwir own copy
+    ------------------------------------------------------------------------
+    => Every object in JavaScript has a built-in property, which is called its prototype.
+    => The prototype is itself an object, so the prototype will have its own prototype,
+       making what's called a ||=> prototype chain <=||.
+    => The chain ends when we reach a prototpe that has NULL for its own prototype.   
+   arr.__proto__ (reference)
+   Array.prototype (actual object)
+   String.prototype
+*/
