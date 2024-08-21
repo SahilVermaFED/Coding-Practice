@@ -955,4 +955,17 @@ object which contains all the keys and values
    String.prototype
 */
 
-//
+// Library v/s Framework
+/* => Library is a collection of pre-written code that can be use to perform specific tasks.
+      => Example of Library - Axios
+   => Framework is a set of pre-written code that provides structure for developing software applications.
+      => Example of Framework - Express     
+*/
+
+// Express
+/* => A Node.js web application framework that helps us to make web applications. 
+   => It is used for server side programming
+   => Express Js mainly does -> 1. Listen for incoming requests
+                             -> 2. Parse 
+                             -> 3. Match response with routes
+   */
